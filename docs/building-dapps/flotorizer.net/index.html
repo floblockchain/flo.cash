@@ -1,0 +1,673 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://flo.cash/building-dapps/flotorizer.net/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../img/favicon-v2.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.2">
+    
+    
+      
+        <title>Flotorizer.net - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.7a4cdee3.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../css/style.css">
+    
+    
+  </head>
+  
+<body class="is-site-bg-img is-site-bg-particles is-loaded is-scroll">
+
+               <header class="site-header" style="background:#212121">
+                  <nav class="navbar navbar-theme">
+                     <div class="container">
+                        <div class="navbar-header">
+                           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+                              aria-expanded="false">
+                           <span class="sr-only">Toggle navigation</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           </button>
+                           <div class="navbar-brand-wrap">
+                              <a class="navbar-brand" href="">
+                              <img src="../../../static/assets/img/logo-with-name-v2.png" alt="">
+                              </a>
+                           </div>
+                        </div>
+                        <!-- .navbar-header -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse">
+                           <ul class="nav navbar-nav navbar-right">
+                              <li><a href="../../../index.html">Home</a></li>
+                              <li><a href="../../../index.html#dapps">Dapps</a></li>
+                              <li><a href="../../../index.html#network">Network</a></li>
+                              <li class="active"><a href="index.html" target="_blank" class="js-analytic">Docs</a></li>
+                              <li><a href="https://forum.flo.cash" class="js-analytic">Forum</a></li>
+                              <li><a href="https://medium.com/flo-cash" target="_blank">News</a></li>
+
+                              <li><script type="text/javascript" src="../../../static/assets/js/pricefeed.js"></script><div class="coinmarketcap-currency-widget" style="" data-currency="florincoin" data-base="USD" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div></li>
+
+
+
+                           </ul>
+                        </div>
+                        <!-- .navbar-collapse -->
+                     </div>
+                  </nav>
+               </header>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+<!--         <a href="https://flo.cash" title="Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../img/logo.png" width="24" height="24">
+          
+        </a> -->
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Flotorizer.net
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+<!--   <a href="https://github.com/valentinjesse/flodocs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      valentinjesse/flodocs
+    </div>
+  </a> -->
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <img src="../../img/logo.png" width="24" height="24">
+      
+    </span>
+    Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/valentinjesse/flodocs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      valentinjesse/flodocs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/obtaining-flo/" title="Obtaining FLO" class="md-nav__link">
+      Obtaining FLO
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/user-guides/flo-setup/" title="FLO Setup" class="md-nav__link">
+      FLO Setup
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Building Dapps
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Building Dapps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Flotorizer.net
+      </label>
+    
+    <a href="./" title="Flotorizer.net" class="md-nav__link md-nav__link--active">
+      Flotorizer.net
+    </a>
+    
+      
+<!-- <nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-beginnings" title="The beginnings" class="md-nav__link">
+    The beginnings
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav> -->
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../support-directory/" title="Support Directory" class="md-nav__link">
+      Support Directory
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<!-- <nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-beginnings" title="The beginnings" class="md-nav__link">
+    The beginnings
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav> -->
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/valentinjesse/flodocs/edit/master/docs/building-dapps/flotorizer.net.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="flotorizer-an-experiment-on-blockchain-for-newbies-by-davi-ortega-ortega_science">Flotorizer: An experiment on Blockchain for newbies. - by Davi Ortega @ortega_science<a class="headerlink" href="#flotorizer-an-experiment-on-blockchain-for-newbies-by-davi-ortega-ortega_science" title="Permanent link">&para;</a></h1>
+<p>Let me preface this post by letting you know that I am not a developer, the only class related to programming that I ever took was 15 years ago, in Pascal — that’s right, Pascal. I am a <a href="https://scholar.google.com/citations?user=ZiSXc5AAAAAJ&amp;hl=en">scientist</a> and I learned how to program Python with friends, colleagues, the internet (thanks StackOverflow). My programming self-education was mostly oriented by challenges related to <a href="http://www.pnas.org/content/114/48/12809.abstract">bioinformatics</a> and scripting tools to analyze atomic trajectories of <a href="https://www.nature.com/articles/ncomms3881">molecular dynamics simulations</a>. </p>
+<p>All that to say that you don’t need to know much about blockchain to make an app with <a href="http://flotorizer.net">Flotorizer</a>. Why not? Because <a href="https://api.alexandria.io/docs/">Alexandria API</a> is a thing.</p>
+<h3 id="the-beginnings">The beginnings<a class="headerlink" href="#the-beginnings" title="Permanent link">&para;</a></h3>
+<p>I started to learn Node.js about two years ago — not full time, I am a scientist remember? — because bioinformatics applications are much more fun (and useful) if they are interactive, and on the web <em>so you can brag about it by sharing a link</em>. I went to one of those <a href="http://www.nodetogether.org/">NodeTogether</a> seminar given by <a href="../undefined">ashley williams</a> and learned enough to really get me going with Node.js. (Thanks <a href="../undefined">ashley</a>). </p>
+<p>I also had a very good friend, Luke Ulrich, who knows a lot of javascript and were working on a project with me… anyways… two years in and I am embarrassed to say that I am still fumbling around with concepts such as promises and callbacks — fun huh?</p>
+<p>Anyways, when I started to check out the then florincoin ecosystem, I barely knew what a blockchain was, but I knew that this tx_comment feature was very interesting. Wait… can I just write whatever I want on the <strong>blockchain</strong> of an ongoing cryptocurrency? How do I do that?</p>
+<p>My curiosity took me to <a href="http://alexandria.io">Alexandria</a>, where I registered and felt tempted to upload <a href="https://alexandria.io/browser/ed6474">an album</a> that I had recorded with some friends back in Tennessee, it did not work the first few times but it finally went through. In the process, I met <a href="../undefined">Devon Read</a>, the CEO of Alexandria himself and my first contact in the FLO community. I met him because I entered on <a href="https://chat.alexandria.io/">their chat channel</a> and started asking questions.</p>
+<p>At this point, I only had a vague idea of how cryptocurrencies worked: I need to have an address… but where is the address stored? What is wallet? What is paper wallet? What happens to this address that I just made but will never use?</p>
+<p>Anyhow… after reading some blogs and wikis I later realized that Alexandria made me a wallet when I registered (thank you Alexandria) and also gave me an address. Cool, now I have a wallet, an address, how can I write on the blockchain?</p>
+<blockquote>
+<h1 id="to-write-in-the-flo-blockchain-you-just-need-to-make-a-transaction-joseph-fiscella-lead-dev-of-flo-project">To write in the FLO blockchain you just need to make a transaction. — <a href="../undefined">Joseph Fiscella</a>, lead dev of FLO project<a class="headerlink" href="#to-write-in-the-flo-blockchain-you-just-need-to-make-a-transaction-joseph-fiscella-lead-dev-of-flo-project" title="Permanent link">&para;</a></h1>
+</blockquote>
+<p>Wait what? That’s it? No smart contract, no mess of OP_RETURN from bitcoin, no need to download the daemons? </p>
+<p>No. All I needed to learn was how to make a transaction.</p>
+<h3 id="my-first-transaction-in-cryptocurrency">My first transaction in cryptocurrency<a class="headerlink" href="#my-first-transaction-in-cryptocurrency" title="Permanent link">&para;</a></h3>
+<p>Ok… so I made another address (by the click of a button in the Alexandria wallet), and now I just needed to make a transaction, and BAM. </p>
+<p>I am not sure which one was my very first transaction of all, but this is my first transaction with comment: <a href="https://florincoin.info/tx/b80cdfabb5d42e7358e0e6ad01878aabebd0bba12c2c25d35691580ac6ec6851">b80cd</a>…</p>
+<h3 id="my-first-transaction-programmatically">My first transaction programmatically<a class="headerlink" href="#my-first-transaction-programmatically" title="Permanent link">&para;</a></h3>
+<p>It was more or less at this time that I discovered the Alexandria API and noticed what they call <strong>“Client Library”</strong>. Browsing the examples I found very interesting that I could send a transaction using <strong>“FloVault”</strong> (I had no idea what that was, but hey… there is so much to learn at once, gotta take it slow). </p>
+<p>Look how simple they made it look! If you want to make a transaction, you just have to sign in to your wallet:</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/2000/1*pE9sPgRSP3c6lsnE2Pn4Pw.png" /></p>
+<p>and…</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/2000/1*-XatVSkLkBAprQPQqyEhWQ.png" /></p>
+<p>BAM! Transaction magic will happen!!!</p>
+<p>Ohhhh cool! Now I can write a few lines of javascript real quick to do that. I already have a wallet from Alexandria and… wait… this is a “client library” and I don’t want to expose the credentials of my wallet in the code (the your_identifier and your_password part of the declaration of the wallet).</p>
+<p>Fine, I am sure I can write a Node command line application (server-side) that can do that in a heart beat. But it wasn’t so easy… </p>
+<p>I was so amazed by the simplicity of making a transaction programmatically that I failed to read the <strong>highlighted</strong> note in the Alexandria API documentation, that says:</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/2000/1*VUZr-SF9yNrdd5cLlX-r2A.png" /></p>
+<p>and because I did not read it I got back in the Alexandria chat and ask: “Where can I find the SimpleWallet.js file?” They told me to download the new one, SimpleWlletFlorincoin.js, which I did, copied the file to my computer and tried to simply login to my wallet…</p>
+<p>I don’t remember now if I succeeded to do that or not, but <strong>I know for sure</strong> that I could <strong>not</strong> make a transaction. Errors after errors and I thought I only needed to load the dependencies using <em>require</em> from node.js and done, but…</p>
+<blockquote>
+<p>What happened next was a battle trying to halfway understand what was called what and finding out the dependencies needed, but after a few hours I had a working combo of code that worked on server side… and they said it couldn’t be done.</p>
+</blockquote>
+<p>You don’t need to hassle that yourself, just copy: <a href="https://github.com/daviortega/flotorizer/blob/master/src/SimpleDeps.js">SimpleDeps.j</a>s and <a href="https://github.com/daviortega/flotorizer/blob/master/src/SimpleWalletFlorincoin.js">SimpleWalletFlorincoin.js</a> from the <a href="https://github.com/daviortega/flotorizer">Flotorizer github</a> and you are good to go. </p>
+<blockquote>
+<p>This was a hack, the FLO team is working to release a npm package that will be able to do all that with even less hassle.</p>
+</blockquote>
+<p>Now I finally could execute <a href="https://florincoin.info/tx/aef827374442dd1688853a47051d90362d8a5d9b077013311823bb5570f0db59">my first transaction programmatically</a>. Here is the code (or something like that):</p>
+<pre><code>require('./SimpleWalletFlorincoin.js')
+
+let addresses = {
+    donor: 'OnEOfMyAddresses',
+    recipient: 'AnotherOfMyAddresses'
+}
+
+let wallet = new Wallet(username, password)
+
+wallet.refreshBalances
+wallet.load(() =&gt; {
+    console.log('wallet ready')
+    wallet.sendCoins(addresses.donor, addresses.recipient, 0.001, 'testing local wallet', function(err, data) {
+        if (err) {
+            console.log('failed to send transaction')
+            throw err
+        }
+        console.log('sucess: ' + data.txid)
+    })
+})
+</code></pre>
+
+<p>then I just had to run: node firstTransaction.js and right there I have written on the FLO Blockchain. Amazing, isn’t it?</p>
+<h2 id="the-birth-of-flotorizer">The birth of Flotorizer<a class="headerlink" href="#the-birth-of-flotorizer" title="Permanent link">&para;</a></h2>
+<p>Months earlier, in my collaboration with the California Pirate Party, I was thinking a lot about digital signatures, encryption and whatnot but all related to pursuit the development of a <a href="https://medium.com/@ortega_science/a-real-lab-for-liquid-democracy-b0ce54a40bb1">voting system for liquid democracy</a>. During that time I was interested in sha algorithms and how cool was that idea.</p>
+<p>Well… it occurred to me that I could put the sha-512 signature of a file in the FLO blockchain. At that moment, I realized that I could prove that a file with a specific content <strong>existed</strong> at least at the time of the transaction.</p>
+<p>Before I even thought about the rest, I already had a name for the application: Florincoin + notary + zer = Flotorizer. I even made a transaction for it: <a href="https://florincoin.info/tx/f9a1ce8f34d03261817b905c0d08034bc25b9fbb827c7ae58de4f724920138f5">f9a1…</a></p>
+<blockquote>
+<p>I know that the most accurate would be Flotarizer, but that doesn’t sound good at all… I thought about Flotary but that was too close to <a href="https://www.rotary.org/">Rotary</a> so I decided to go with Flotorizer.</p>
+</blockquote>
+<p>In my first transaction, I used the shasum command line unix application to calculate the digital signature of a file and the snippet above to insert it in the block chain: <a href="https://florincoin.info/tx/8004104227dc5f59c6e817dbcd4d192d21c31118b1e2225133d0d0022b9c61b6">8004…</a></p>
+<p>That was the moment I realized (it was a week full of epiphanies), I not only could prove the existence of the file but… wait for it… </p>
+<p><strong>I didn’t even need to tell anyone what the file was about, at all</strong>!!!</p>
+<p>See, theSHA2 family of hash function generates a <a href="https://en.wikipedia.org/wiki/Collision_resistance">unique *enough</a>* string for a given input. But you cannot figure out the input just by looking at the string. Thus, I can prove that a picture existed without showing it to anyone, only by calculating the sha-512 digital signature of the picture and posting on the FLO Blockchain.</p>
+<p>If any one contested that the picture actually existed, then all I had to do is to calculated the signature with <a href="https://md5file.com/calculator">any independent sha-512 calculator</a> and compare the result with the record in the Blockchain. No one can delete the record and the record is public, but nobody knows what it is proving until it is contested. Cool, huh?</p>
+<p>Lastly, I realized that other people might want to use this too. So I thought about making the app public. The cost of a Flotorization is 0.001 FLOs in fees of the transaction and with 1 FLO at less than $0.10 I thought I could fund it with less than $1.00 and make the app free… and so I did.</p>
+<p>So I decide to pack all that into a public app. But as a sympathizer of the pirates ideals of privacy, I wanted to have an app that was Zero Knowledge. I did not want to have any knowledge of what was flotorized</p>
+<h2 id="the-backbones-of-flotorizer">The backbones of Flotorizer<a class="headerlink" href="#the-backbones-of-flotorizer" title="Permanent link">&para;</a></h2>
+<p>This part is a bit more technical, but I promise that it is not that complicated.</p>
+<p>I used the <a href="https://nodejs.org/api/crypto.html">crypto</a> library of <a href="https://nodejs.org/en/">Node.js</a> with <a href="https://webpack.js.org/">Webpack</a> to build a code client-side that calculates the sha-512 digital signature of the file chosen by the user without having to <strong>EVER</strong> submit the file to the server.</p>
+<p>That way, even as the creator of Flotorizer, I would never know what the file was about, even if I tried.</p>
+<p>On the server-side, I used <a href="https://expressjs.com/">express.js</a> to build literally two routes:</p>
+<ul>
+<li>
+<p>/stats : Which returns the number of flotorizations so far</p>
+</li>
+<li>
+<p>/flotorize: a GET route that does all the magic</p>
+</li>
+</ul>
+<p>The client-side of the code, as soon as it finishes to calculate the digital signature, makes a GET request to/flotorize sending as parameters the sha-512 signature and the name of the file.</p>
+<p>The server-side now attempts to make a transaction from my two addresses and puts the digital signature in the tx_comment field of the transaction:</p>
+<pre><code>This document has been flotorized: 1ED58159ADCF54A4753083F706089A4BC0CEAA55A8E973D431E7E056CE034FD1D5925096689E5494608DF0F246AC24D7BC89ADDB039CBCC13B8FCC47C8C245AE
+</code></pre>
+<blockquote>
+<p>By the way, I had to implement a lousy check to avoid double (or multiple) flotorizations of the same file. All because this hash 1ED5&hellip; has been flotorized probably over 100 times, haha. If the owner of the file is reading this, please let me know what the file that generates this signature is… or better yet, don’t :)</p>
+</blockquote>
+<p>If the transaction is successful, the server-side code uses pdfkit to generate a PDF receipt with the information about the name of the file and the transaction. It also encodes the link for the transaction in the <a href="https://florincoin.info">FLO block explorer</a> on a QR-code using qr-image.</p>
+<p>As soon as the pdf is completed, server sends the pdf file back to the user and immediately deletes it from the server’s storage. No database is required, no long term storage, nothing, as simple as it gets.</p>
+<p>With the code running locally, all I had to to is to pass it to <a href="http://heroku.com">Heroku</a>. To hide my credentials I use the Heroku environmental variables. Locally, I stripped the credentials from the code and use nf package to generate the environmental variables from a .env file that I sure included in my .gitignore.</p>
+<p>And there you have it. A VERY simple code that can let you prove that a certain content in a file existed at least prior to the time of transaction.</p>
+<p>Let me know if you have any questions or comments. I hope you too feel encouraged to adventure yourself in using this amazing infrastructure around the FLO Blockchain.</p>
+<p>As for the future of Flotorizer, we are developing a new, more robust, version of it. We will always offer the current service for free and in the near future we will build a paid version (paid with FLOs only) that will offer the option to save your files as well. In that version, all the information will be encrypted client-side before it is sent to our servers, keeping the full privacy for our users.</p>
+<p>If you want to support this development, donate to:</p>
+<ul>
+<li>
+<p>FLO: F8YfuREuqCtW8MNj5LADczLoskgSDaNskn</p>
+</li>
+<li>
+<p>LTC: LarUzkftuCjWi1sAL8An7o6wohdz4vJxTq</p>
+</li>
+<li>
+<p>BTC: 1ArSXxcNTPbofJ1p79cg3ATd3cB5reqXGB</p>
+</li>
+<li>
+<p>XMR: 4LBX9sXW8dR8Aa55wvZhRj6WAUD1Tej6caLVv2tdkPH54njhYKTKfVMNxAtzD4P5DmiM5FAAi7Esg7EkEU3u2a98FzRy82YMaqn1xDdZCw</p>
+</li>
+</ul>
+<p>If you want to donate in any other crypto currency, just let me know.</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../getting-started/user-guides/flo-setup/" title="FLO Setup" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                FLO Setup
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../support-directory/" title="Support Directory" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Support Directory
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            If you wish to improve this site, please <a href="https://github.com/valentinjesse/flodocs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/valentinjesse/flodocs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>flodocs v0.0.1. FLO Project 2017.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/flo-blockchain" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/floblockchain" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.reddit.com/r/floblockchain/" class="md-footer-social__link fa fa-reddit"></a>
+    
+      <a href="https://www.youtube.com/channel/UCDAELSdJelys5VkE1FuXo2A" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.6cdc17f0.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+        <script src="../../js/MathJax-2.7.0/MathJax.js%3Fconfig%3DTeX-AMS-MML_HTMLorMML"></script>
+        <script src='../../../static/assets/js/scripts.js'></script>
+        <script type="text/javascript" src="../../../static/assets/js/script.min.8cf8fe3e.js"></script>
+    
+    
+      
+    
+  </body>
+</html>
